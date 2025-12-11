@@ -1,16 +1,163 @@
 # JavaScript Client-side Form Validation
-This is the repository for **JavaScript** form validation, when a form is submitted. 
-This form has 4 input fileds: *username, email, password* and *confirm password.*
-Also they have two different styles for the inputs: *success* and *error* - both showing the different states of messages that the inputs can have.
+
+A lightweight and user-friendly JavaScript form validation script that provides real-time input feedback to ensure form data is accurate, complete, and ready for submission.  
+
+---
+
+## 📌 About the Project
+
+FormValidation.js is a simple, custom-built validation solution designed to enhance any HTML form with instant input checks.  
+It highlights errors, validates different field types, and improves user experience with clean, interactive feedback — all without requiring external libraries.
+
+---
+
+## ✨ Features
+
+- Real-time form validation  
+- Highlights valid and invalid inputs  
+- Custom validation messages  
+- Email, text, and password validation  
+- Minimal, readable JavaScript code  
+- No dependencies — **pure JavaScript**  
+- Easy to integrate into any project
+
+---
+
+## 🛠️ Built With
+
+- **HTML5**
+- **CSS3**
+- **Vanilla JavaScript (ES6)**
+
+---
+
+## 🚀 Live Demo
+
+Try the live project here:  
+👉 https://full-stack-web-developer-and-designer.github.io/FormValidation.js/
+
+---
+
+### 📷 Screenshot
+
+[![Mockup of project "JavaScript Form validation" by professional web developer and designer Mirnes Glamočić](/screenshot.png)]( https://full-stack-web-developer-and-designer.github.io/FormValidation.js/)
+
+---
+
+## 📂 Project Structure
+
+```graphql
+jQuery-datepicker/
+│── index.html          # Main page containing JavaScript form validation
+|
+│── LICENSE             # MIT LICENSE
+|
+│── README.md           # This documentation file
+|
+│── screenshot.png      # screenshot
+|
+│── style.css           # Styles for form and layout
+|
+└── validation.js       # JavaScript form validation
+```
+
+---
 
 
-For validation to work you need to these things correctly: 
-* In all of the inputs you need to input something. 
-* For username input, your username needs to be correctly written, allowed just letters a-z + letters čćđšž. This has been done and verified correctly using Regex
-* For email input, your email needs to be correctly written (for example: contact@mirnesglamocic.com). This has been done and verified correctly, also using Regex
-* For last two inputs, password and confirm password, the password you have entered in the first input called "password", you need to retype also in "confirm password"
-## How do you know if it worked?
-* If you have done everything correctly, your inputs on submit will change border-color to green with checkmark that everything is done correctly. Otherwise, your inputs will change border-color to red with exclamation mark that there have some errors.
-##
-[PREVIEW](https://full-stack-web-developer-and-designer.github.io/FormValidation.js/)
+---
 
+## 🔧 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/full-stack-web-developer-and-designer/FormValidation.js.git
+```
+
+### 2. Open the project
+
+Open the index.html file in a browser:
+
+```diff
+index.html
+```
+
+---
+
+## 📦 Usage
+
+Include the script inside your HTML:
+
+```html
+<script src="validation.js"></script>
+```
+
+Add form fields with IDs or classes that match your JavaScript selectors:
+
+```html
+<input type="text" id="name" placeholder="Enter your name">
+<input type="email" id="email" placeholder="Enter your email">
+<input type="password" id="password" placeholder="Enter your password">
+<button type="submit">Submit</button>
+```
+
+The JavaScript automatically validates on input or submit (depending on your implementation).
+
+---
+
+## 🧪 Example JavaScript Validation
+
+```javascript
+const nameInput = document.getElementById("name");
+
+nameInput.addEventListener("input", () => {
+  if (nameInput.value.length < 3) {
+    nameInput.classList.add("invalid");
+  } else {
+    nameInput.classList.remove("invalid");
+    nameInput.classList.add("valid");
+  }
+});
+```
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+
+2. Create a new branch
+
+3. Commit your changes
+
+4. Push your branch
+
+5. Submit a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+--
+
+### 👤 Author
+
+#### Mirnes Glamočić
+🌐 https://mirnesglamocic.com
+
+📧 Contact available on the website
+
+---
+
+### ⭐ Acknowledgments
+
+Thank you for trying JavaScript form validation!
+
+Feel free to send suggestions or improvements.
+
+---
+
+### ⭐ If you find this project helpful, please give it a star!
