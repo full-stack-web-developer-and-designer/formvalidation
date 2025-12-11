@@ -34,13 +34,13 @@ It highlights errors, validates different field types, and improves user experie
 ## 🚀 Live Demo
 
 Try the live project here:  
-👉 https://full-stack-web-developer-and-designer.github.io/FormValidation.js/
+👉 https://full-stack-web-developer-and-designer.github.io/formvalidation/
 
 ---
 
 ### 📷 Screenshot
 
-[![Mockup of project "JavaScript Form validation" by professional web developer and designer Mirnes Glamočić](/screenshot.png)]( https://full-stack-web-developer-and-designer.github.io/FormValidation.js/)
+[![Mockup of project "JavaScript Form validation" by professional web developer and designer Mirnes Glamočić](/screenshot.png)]( https://full-stack-web-developer-and-designer.github.io/formvalidation/)
 
 ---
 
@@ -71,7 +71,7 @@ jQuery-datepicker/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/full-stack-web-developer-and-designer/FormValidation.js.git
+git clone https://github.com/full-stack-web-developer-and-designer/formvalidation.git
 ```
 
 ### 2. Open the project
